@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
-import data from "../../../task1/posts (1).json"
+import posts from "../data/posts.json"
 import cam1 from "../assets/images/photo-32.jpg";
 import dawod from "../assets/images/photo-11a.jpg";
 import cam2 from "../assets/images/photo0d.jpg";
