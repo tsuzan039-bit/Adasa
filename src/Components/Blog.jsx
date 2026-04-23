@@ -191,8 +191,8 @@ export default function Blog() {
             </div>
           )}
 
-          <div style={{ marginTop: 40 }}>
-            <Pages currentPage={currentPage} handlePage={handlePage} pagesNum={pagesNum} />
+          <div   style={{ marginTop: 40 }}>
+            <Pages   currentPage={currentPage} handlePage={handlePage} pagesNum={pagesNum} />
           </div>
         </div>
       </div>
