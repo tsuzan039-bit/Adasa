@@ -388,7 +388,7 @@
 // }
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import posts from "../data/posts.json"
+import postsData from "../data/posts.json"
 import Category from './Category/Category';
 import Pages from "./Pages/Pages.jsx";
 
