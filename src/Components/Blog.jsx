@@ -397,7 +397,7 @@ export default function Blog() {
   const [currentCategory, setcurrentCategory] = useState("جميع المقالات")
   const [display, setdisplay] = useState("grid")
   const [search, setsearch] = useState("")
-  const { categories, posts } = data
+const { categories, posts } = postsData
   const [currentPage, setcurrentPage] = useState(1)
   const allCat = ["جميع المقالات", ...categories.map((item) => item.name)];
 

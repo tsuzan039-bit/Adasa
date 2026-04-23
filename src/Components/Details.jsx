@@ -52,7 +52,8 @@ const related = [
 ];
 
 export default function Details() {
-  const { posts } = data;
+const { posts } = postsData
+
   const { id } = useParams();
   const mypost = posts.find((item) => item.id === Number(id));
 
