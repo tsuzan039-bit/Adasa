@@ -66,8 +66,21 @@ export default function Details() {
         .det-author-row .name { font-size:14px; font-weight:700; color:#fff; }
         .det-author-row .role { font-size:12px; color:#6b7280; }
         .det-body { max-width:1200px; margin:0 auto; padding:48px clamp(16px,4vw,40px); display:grid; grid-template-columns:1fr 300px; gap:40px; align-items:start; }
-        @media(max-width:900px){ .det-body { grid-template-columns:1fr; } .det-sidebar { order:-1; } }
-        .det-blockquote { border-right:4px solid #f97316; background:rgba(249,115,22,0.06); border-radius:0 12px 12px 0; padding:20px 24px; margin:0 0 36px; font-size:16px; color:#e5e7eb; line-height:1.8; font-style:italic; }
+@media(max-width:900px){
+  .det-body { 
+    grid-template-columns:1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .det-sidebar { 
+    order: 2;
+    position: static;
+    width: 100%;
+  }
+  article {
+    order: 1;
+  }
+}        .det-blockquote { border-right:4px solid #f97316; background:rgba(249,115,22,0.06); border-radius:0 12px 12px 0; padding:20px 24px; margin:0 0 36px; font-size:16px; color:#e5e7eb; line-height:1.8; font-style:italic; }
         .det-intro { font-size:15px; color:#9ca3af; line-height:1.9; margin:0 0 36px; }
         .det-tip { display:flex; gap:16px; margin-bottom:28px; background:#1a1a1a; border:1px solid #222; border-radius:14px; padding:20px 24px; transition:border-color .2s; }
         .det-tip:hover { border-color:#f97316; }
